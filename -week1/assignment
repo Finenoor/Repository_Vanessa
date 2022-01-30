@@ -1,0 +1,161 @@
+# VanessaChen-week1-assignment
+
+2.git status : To show the status of your git and what commit you made before.
+
+git add : You can track the file and stage the change. This means you are starting your git commit. I want you to include the change that I have made to the license file.
+
+git commit :This is a default test you can possibly vim and it will help you specify the commit message.
+
+git log : This will show you the history of the file.
+
+git push : You can use this to push you local content onto github.
+
+git remote -v : You can confirm that this is the clone of your fork.
+
+git branch : Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.
+fork: This means that you take an entire copy of the repo and replicate it in your personal user space.
+
+3.First, you get to sign up for GitHub and create a repository on the website.
+Secondly, you create the name of the repo and choose public so that it's open toothers to see. 
+Thirdly, you get to copy the URL of your repo and go to your local terminals, making git clone http:(URL).  
+#How to upload the local projects to GitHub?
+Go back to your project in the terminal/command line.
+In your terminal/command line, type git remote add origin [copied web address]
+Example: git remote add origin https://github.com/mindplace/test-repo.git
+Push your branch to Github: git push origin master
+Go back to the folder/repository screen on Github that you just left, and refresh it. The title 'Quick setup — if you’ve done this kind of thing before' should disappear, and you should see your files there.
+//Basic
+let Pi: Double = 3.14 //Q1
+//--------------------------------------------
+let x: Int = 3
+let y: Int = 5
+let average = ((x+y)/2)//Q2
+//--------------------------------------------
+
+3-1 let recordValue = Float(average)
+//Q3-2The difference between 10/3 and 10.0/3.0 us that the former display should use Interger and the latter should use Double. 
+//Q4------------------------------------------
+var flag: Bool = true
+var inputString: String = "Hello world."
+let bitsInBite: Int = 8
+let averageScore: Double = 86.8
+//--------------------------------------------
+var salary = 22000
+salary += 28000
+print(salary) //Q5
+//--------------------------------------------
+2 == 2 //Q6 The equality sign in swift is ==.
+//--------------------------------------------
+let x = 10
+let y = 3
+let remainder = 10%3 //Q7
+//--------------------------------------------
+//Q8-The difference beween let and var is that the former is a constant which means you can't change the value. While the latter is a variable which you can store changeable value inside.
+9 Camel Case. The first letter of the first word is lowercase, and the first letter of the remaining words is uppercase.
+10If you don't specify the type of value you need, Swift uses type inference to work out the appropriate type. Type inference enables a compiler to deduce the type of a particular expression automatically when it compiles your code, simply by examining the values you provide.
+11 //var phoneNumber = 0987654321
+   //Determined that the variable type of  is an integer
+   //phoneNumber = "Hello world."
+   //Assigned a string to this variable. So it's wrong.
+
+//Collection 
+var myFriends: [String] = []  //Q1 
+myFriends += ["Ian", "Bomi", "Kevin"] //Q2
+myFriends.insert("Michael", at:3). //Q3
+myFriends.swapAt(0,2).   //Q4
+//Q5-----------------------------------------
+for friend in myFriends {
+    print(friend)
+}
+//-------------------------------------------
+myFriends.count //Q6.I use myFriends.count to count how many friends in the array and found out that there's only 4 friends. Thus, there's no index 5 in the array. In other words, there's only index 0 to 3 in the array.
+myFriends.first //Q7
+myFriends.last. //Q8
+9   var myCountryNumber = [String:Int]()
+10 myCountryNumber = ["US": 1,"GB": 44, "JP": 81]
+11  myCountryNumber.updateValue(0, forKey: "GB")
+//Q12----------------------------------------------
+var emptyDictionary: [String: Int] = [:]
+//Q13----------------------------------------------
+myCountryNumber.removeValue(forKey: "Taiwan")
+
+
+//Control Flow
+//Q1-----------------------------------------------
+let lottoNumbers = [10, 9, 8, 7, 6, 5]
+for num in lottoNumbers.count - 3 ... lottoNumbers.count - 1 {
+    print(lottoNumbers[num])
+//Q2-----------------------------------------------
+for index in stride(from: 5, to: -1, by: -1) {
+    print(lottoNumbers[index])
+}
+for index in stride(from: 0, to: 5 , by: 2) {
+    print(lottoNumbers[index])
+//Q3-----------------------------------------------
+let lastCount = 3
+var i = 0
+while i < lastCount {
+    print(lottoNumbers[lottoNumbers.count - lastCount + i])
+    i += 1
+}
+
+let lottoNumbers = [10, 9, 8, 7, 6, 5]
+let lastIndex = lottoNumbers.count - 1
+var i = 0
+while i <= lastIndex {
+    print(lottoNumbers[lastIndex - i])
+    i += 1
+}
+
+let lastIndex = lottoNumbers.count - 1
+var i = 0
+while i < lastIndex {
+    print(lottoNumbers[i])
+    i += 2
+}
+//Q4-----------------------------------------------
+  let lastIndex = lottoNumbers.count - 1
+var i = 0
+repeat {
+    print(lottoNumbers[lastIndex - i])
+    i += 1
+} while i <= lastIndex
+
+
+repeat {
+    print(lottoNumbers[i])
+    i += 2
+} while i <= lastIndex
+
+//------------------------------------------------
+//Q5- The difference between while loop and repeat while loop is that the former will define the condition first then execute the code, the latter will execute the code first, then define the condition afterwards.
+//Q6-----------------------------------------------
+var isRaining = false
+if isRaining {
+    print("It’s raining, I don’t want to work today.")
+} else {
+  print("Although it’s sunny, I still don’t want to work today.")
+}
+//Q7---------------------------------------------------------------------------------
+var allJob = [1: "Member", 2: "Team Leader", 3: "Manager", 4: "Director"]
+var jobLevel = 2
+switch allJob.keys.contains(jobLevel) {
+case true:
+    print(allJob[jobLevel])
+default:
+    print("We don't have this job")
+}
+
+
+//Function
+//Q1--
+func greet(person name: String) -> String {
+    return("Hello,(name)")
+}
+//Q2------------------------------------
+func multiply(a:Int, b:Int = 10){
+    print(a*b)
+}
+//Q3-The argument label is used when calling the function; each argument is written in the function call with its argument label before it. The parameter name is used in the implementation of the function.If don’t specify an argument label. The parameter name is your argument label.
+//Q4.  String
+ Double
