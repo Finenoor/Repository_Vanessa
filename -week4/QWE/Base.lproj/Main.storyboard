@@ -16,20 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-qg-Pur">
-                                <rect key="frame" x="188.5" y="194" width="37" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stationID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-qg-Pur">
+                                <rect key="frame" x="149.5" y="194" width="115.5" height="171.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siaogang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="80" translatesAutoresizingMaskIntoConstraints="NO" id="GGl-DV-sXK">
-                                <rect key="frame" x="10" y="300" width="394" height="95"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="stationName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGl-DV-sXK">
+                                <rect key="frame" x="-6.5" y="400" width="427" height="95"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高雄市小港區沿海一路280號地下一樓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjb-7z-XWw">
-                                <rect key="frame" x="53.5" y="641" width="307.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stationAddress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjb-7z-XWw">
+                                <rect key="frame" x="147" y="641" width="120.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -38,13 +38,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="GGl-DV-sXK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2Mx-h8-Fch"/>
                             <constraint firstItem="LQx-qg-Pur" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="AQq-qJ-dcN"/>
                             <constraint firstItem="GGl-DV-sXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="NUH-So-eKc"/>
                             <constraint firstItem="LQx-qg-Pur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sjs-C1-SQm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sjb-7z-XWw" secondAttribute="bottom" constant="200" id="W6x-n1-ibz"/>
                             <constraint firstAttribute="trailing" secondItem="GGl-DV-sXK" secondAttribute="trailing" constant="10" id="kKM-pJ-3FS"/>
                             <constraint firstItem="sjb-7z-XWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3U-ey-aD2"/>
-                            <constraint firstItem="GGl-DV-sXK" firstAttribute="top" secondItem="LQx-qg-Pur" secondAttribute="bottom" constant="70" id="oA7-nf-1ud"/>
+                            <constraint firstItem="GGl-DV-sXK" firstAttribute="top" secondItem="LQx-qg-Pur" secondAttribute="bottom" constant="35" id="oA7-nf-1ud"/>
+                            <constraint firstItem="GGl-DV-sXK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pqN-Rb-KwS"/>
                         </constraints>
                     </view>
                     <connections>
